@@ -1,0 +1,158 @@
+:root {
+    --verde-escuro: #1A9047;
+    --verde-claro:#2BC866;
+    --azul-escuro:#004AAD;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica", "Helvetica Neue Bold", serif;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 100px;
+    border-bottom: #c1c0c0 1px solid;
+    background-color: white;
+}
+.logo-titulo {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.logo-titulo #logo {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+}
+.logo-titulo #titulo {
+    align-self: center;
+    font-size: 20px;
+    color: var(--azul-escuro);
+}
+
+.navbar {
+    display: inline-flex;
+    gap: 20px;
+    align-self: center;
+}
+.navbar > a {
+    font-size: 20px;
+    color: var(--azul-escuro);
+    font-weight: bold;
+}
+
+.userbuttons {
+    display: inline-flex;
+    gap: 10px;
+}
+.userbuttons > button {
+    padding: 10px 20px;
+}
+.userbuttons #entrar {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: var(--verde-claro);
+    border: 1px solid var(--verde-escuro);
+    font-weight: bold;
+    font-size: 15px;
+}
+#entrar:hover{
+    background-color: var(--verde-escuro);
+    color: white;
+    transition: 0.1s;
+}
+
+.userbuttons #cadastrar {
+    background-color: var(--verde-escuro);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+#cadastrar:hover{
+    background-color:white;
+    color: var(--verde-escuro);
+    transition: 0.4s;
+}
+
+/* Seção ajuda */
+
+#ajuda {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+#intro > img {
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+}
+
+#intro > div {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 10px;
+}
+#intro > div > h1{
+    color: var(--verde-claro);
+    font-size: 35px;
+    text-wrap: balance;
+}
+
+#carrossel {
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    margin: 20px 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--verde-claro);
+    height: 460px;
+    width: 250px;
+    gap: 14px;
+    padding: 10px;
+}
+.card > h3 {
+    color: var(--verde-claro);
+}
+
+.card > img {
+    padding-top: 30px;
+    width: 20%;
+}
+
+.card > ul {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.card > ul > li {
+    padding: 5px 5px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+<!--        A primeira implementação do header foi na Home, desta forma poderia reutilizar o código em outras páginas-->
+        <header id="headermenu">
+            <div class="logo-titulo">
+                <!-- Esse foi o truck mais próximo do modelo que consegui encontrar -->
+                <img id="logo" src="https://img.icons8.com/?size=100&id=7486&format=png&color=1A9047"/>
+                <h1 id="titulo" >Rastreio Xpress</h1>
+            </div>
+
+            <nav class="navbar">
+                <a href="../home/home.html">Home</a>
+                <a href="../sobre/sobre.html">Sobre nós</a>
+                <a href="../parceiros/parceiros.html">Parceiros</a>
+                <a href="../ajuda/ajuda.html">Ajuda</a>
+            </nav>
+
+            <div class="userbuttons">
+                <a href="#" id="entrar">Entrar</a>
+                <a href="#" id="cadastrar">Cadastrar</a>
+            </div>
+        </header>
+
+        <div id="home">
+            <section class="rastreio">
+                <h1 id="rastreie">Rastreie seu Pedido!</h1>
+                <div>
+                    <input type="text" placeholder="Código de rastreamento">
+<!--                    O botão muda de cor para azul escuro-->
+                    <button id="rastrear">
+                        <img src="https://img.icons8.com/?size=100&id=85049&format=png&color=FFFFFF" id="icone">
+                        Rastrear
+                    </button>
+                </div>
+            </section>
+            <section class="imgfundo">
+                <img src="../img/boxes.svg" id="img">
+            </section>
+    </div>
+</body>
+
+</html>
